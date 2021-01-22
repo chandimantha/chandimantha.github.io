@@ -1,0 +1,96 @@
+<footer class="container-fluid bg-dark p-5">
+    <div class="row">
+        <div class="col-sm-3">
+            <h6 class="text-secondary">Home</h6>
+            <hr>
+            <p>
+                <a href="https://chandimantha.github.io">Home</a>
+                <br><a href="https://chandimantha.github.io/#projectAnchor">Products</a>
+                <br><a href="https://chandimantha.github.io/shop.html">Shop</a>
+                <br><a href="#contactAnchor">Contact</a>
+            </p>
+        </div>
+
+        <div class="col-sm-3">
+            <h6 class="text-secondary">Services</h6>
+            <hr>
+
+            <h6 class="text-secondary">Hardware</h6>
+            <p>
+                <a href="https://chandimantha.github.io/#projectAnchor">Laptops</a>
+                <br><a href="https://chandimantha.github.io/#projectAnchor">Desktops</a>
+                <br><a href="https://chandimantha.github.io/#projectAnchor">Server</a>
+            </p>
+
+            <h6 class="text-secondary">Software</h6>
+            <p>
+                <a href="https://chandimantha.github.io/#projectAnchor">Microsoft</a>
+                <br><a href="https://chandimantha.github.io/#projectAnchor">Adobe</a>
+                <br><a href="https://chandimantha.github.io/#projectAnchor">Filmora</a>
+            </p>
+
+        </div>
+
+        <div class="col-sm-3">
+            <h6 class="text-secondary">Shop</h6>
+            <hr>
+
+            <h6 class="text-secondary">Accesories</h6>
+            <p>
+                <a href="https://chandimantha.github.io/shop.html">Softwares</a>
+                <br><a href="https://chandimantha.github.io/shop.html">RGB Lighting</a>
+                <br><a href="https://chandimantha.github.io/shop.html">Expansion Cards</a>
+            </p>
+
+            <h6 class="text-secondary">Essential</h6>
+            <p>
+                <a href="https://chandimantha.github.io/shop.html">Storage</a>
+                <br><a href="https://chandimantha.github.io/shop.html">Sounds</a>
+                <br><a href="https://chandimantha.github.io/shop.html">Chairs</a>
+            </p>
+
+            <h6 class="text-secondary">Power</h6>
+            <p>
+                <a href="https://chandimantha.github.io/shop.html">Power Supply</a>
+                <br><a href="https://chandimantha.github.io/shop.html">UPS</a>
+                <br><a href="https://chandimantha.github.io/shop.html">Surge Protectors</a>
+            </p>
+        </div>
+
+        <div class="col-sm-3" id="contactAnchor">
+            <h6 class="text-secondary">Contact</h6>
+            <hr>
+            <p>
+                <i class="fas fa-envelope"></i> chandimanthawijesuriya@yahoo.com
+            </p>
+            <p>
+                <i class="fas fa-camera"></i> instagram 
+                <br><i class="fab fa-facebook-square"></i> facebook 
+                <br><i class="fab fa-twitter-square"></i> twitter 
+                <br><i class="fab fa-google-plus-square"></i> google+ 
+            </p>
+        </div>
+
+    </div>
+
+    <p class="text-center">Developed By Chandimantha &copy; 2021</p>
+</footer>
+
+<script>
+    $(function() {
+        // this is the page scrolling script
+        // see notes in the script.js file
+        $('.dropdown-item, .nav-item').on('click', function(e) {
+            if ( this.hash !== "" ) {
+                e.preventDefault();
+                var anchor = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(anchor).offset().top
+                }, 800, function() {
+                    window.location.hash = anchor;
+                });
+            }
+        });
+    });
+</script>
